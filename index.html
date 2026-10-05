@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Z4YROX LEAGUE S1</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><img src="assets/league-logo.jpg"><div><b>Z4YROX</b><span>LEAGUE S1</span></div></div>
+  <nav>
+    <a href="#home" data-en="Home" data-ar="الرئيسية">Home</a>
+    <a href="#teams" data-en="Teams" data-ar="الفرق">Teams</a>
+    <a href="#schedule" data-en="Schedule" data-ar="الجدول">Schedule</a>
+    <a href="#leaderboard" data-en="Leaderboard" data-ar="الترتيب">Leaderboard</a>
+    <a href="admin.html" class="admin-link" data-en="Admin" data-ar="الإدارة">Admin</a>
+  </nav>
+  <button id="langBtn">العربية</button>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div>
+    <p class="eyebrow">FREE FIRE • MEA</p>
+    <h1>Z4YROX<br><span>LEAGUE S1</span></h1>
+    <p class="lead" data-en="36 teams. 3 groups. One champion." data-ar="36 فريقاً. 3 مجموعات. بطل واحد.">36 teams. 3 groups. One champion.</p>
+    <div class="chips"><span>36 TEAMS</span><span>A • B • C</span><span>90 PTS + BOOYAH</span></div>
+  </div>
+  <img class="hero-logo" src="assets/league-logo.jpg">
+</section>
+
+<section class="sponsor">
+  <span data-en="POWERED BY" data-ar="برعاية">POWERED BY</span>
+  <img src="assets/brotherhood.jpg" alt="Brotherhood sponsor">
+</section>
+
+<section id="teams" class="section">
+  <div class="section-title"><div><p class="eyebrow">TEAMS</p><h2 data-en="Groups" data-ar="المجموعات">Groups</h2></div></div>
+  <div class="group-grid">
+    <div class="group-card"><h3>GROUP A</h3><div id="groupA"></div></div>
+    <div class="group-card"><h3>GROUP B</h3><div id="groupB"></div></div>
+    <div class="group-card"><h3>GROUP C</h3><div id="groupC"></div></div>
+  </div>
+</section>
+
+<section id="schedule" class="section dark">
+  <p class="eyebrow">ROAD TO GRAND FINAL</p><h2 data-en="Competition Format" data-ar="نظام البطولة">Competition Format</h2>
+  <div class="timeline">
+    <div><b>GROUP STAGE</b><span>36 teams → Top 6 qualify from each group</span></div>
+    <div><b>KNOCKOUT DAY 1</b><span>A × C</span></div>
+    <div><b>KNOCKOUT DAY 2</b><span>C × B</span></div>
+    <div><b>KNOCKOUT DAY 3</b><span>B × A</span></div>
+    <div><b>GRAND FINAL</b><span>Top 12 qualify • 90 points + Booyah = Winner</span></div>
+  </div>
+</section>
+
+<section id="leaderboard" class="section">
+  <p class="eyebrow">LIVE STANDINGS</p><h2 data-en="Leaderboard" data-ar="الترتيب">Leaderboard</h2>
+  <div class="table-wrap"><table><thead><tr><th>#</th><th>Team</th><th>Pts</th><th>Booyah</th></tr></thead><tbody id="leaderboardBody"></tbody></table></div>
+</section>
+</main>
+
+<footer>
+  <div><b>Z4YROX LEAGUE S1</b><span>Free Fire MEA Fantasy League</span></div>
+  <a href="admin.html">Admin Panel</a>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
