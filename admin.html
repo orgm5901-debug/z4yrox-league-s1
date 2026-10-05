@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Z4YROX Admin</title><link rel="stylesheet" href="styles.css">
+</head>
+<body class="admin-page">
+<div id="login" class="login-box">
+  <img src="assets/league-logo.jpg">
+  <p class="eyebrow">Z4YROX LEAGUE S1</p><h1>ADMIN PANEL</h1>
+  <p>Enter the administrator password.</p>
+  <input id="password" type="password" placeholder="Password">
+  <button id="loginBtn" class="primary">Login</button>
+  <p id="loginError" class="error"></p>
+  <a href="index.html">← Back to league</a>
+</div>
+
+<div id="dashboard" class="dashboard hidden">
+<header class="topbar">
+  <div class="brand"><img src="assets/league-logo.jpg"><div><b>Z4YROX</b><span>ADMIN</span></div></div>
+  <div><button id="langBtn">العربية</button><button id="logoutBtn" class="danger">Logout</button></div>
+</header>
+<main class="admin-main">
+  <div class="admin-head"><div><p class="eyebrow">CONTROL CENTER</p><h1>League Management</h1></div><button id="saveAll" class="primary">Save Changes</button></div>
+  <div class="stats"><div><b id="teamCount">36</b><span>Teams</span></div><div><b id="matchCount">3</b><span>Knockout Days</span></div><div><b>12</b><span>Grand Finalists</span></div></div>
+  <section class="panel">
+    <h2>Teams & Scores</h2><p class="muted">Edit names, group and points. Changes are stored in this browser.</p>
+    <div id="teamEditor"></div>
+    <button id="addTeam" class="secondary">+ Add team</button>
+  </section>
+  <section class="panel">
+    <h2>Competition Rules</h2>
+    <textarea id="rules" rows="7">36 teams
+Groups A, B, C
+Top 6 from each group qualify for Knockout Stage
+Knockout Stage: 18 teams
+Day 1: A × C
+Day 2: C × B
+Day 3: B × A
+Top 12 qualify for Grand Final
+90 points + Booyah = Winner</textarea>
+  </section>
+  <section class="panel">
+    <h2>Announcement</h2>
+    <input id="announcement" placeholder="Example: Grand Final starts at 20:00 GMT+1">
+  </section>
+  <div class="notice">Prototype admin: local browser storage. For a real multi-device online admin with secure authentication and shared database, connect Supabase/Firebase or a custom backend before launch.</div>
+</main>
+</div>
+<script src="admin.js"></script>
+</body>
+</html>
